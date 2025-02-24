@@ -1,0 +1,12 @@
+# This is a CODEOWNERS file.
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
+
+# Code modifications by the development team
+/src/ @development-team
+
+# Unit tests by the testing team
+/tests/ @testing-team
+
+# Workflows by the DevOps team
+/.github/workflows/ @devops-team

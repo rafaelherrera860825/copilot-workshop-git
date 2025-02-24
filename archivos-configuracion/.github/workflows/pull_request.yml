@@ -1,0 +1,20 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  check-system-info:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Show system version
+      run: uname -a
+
+    - name: Show current user
+      run: whoami
